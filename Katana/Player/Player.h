@@ -29,7 +29,7 @@ class Player
     public:
         // Getters
         int get_HP();
-        int get_HonorPoints;
+        int get_HonorPoints();
         std::string get_name();
         std::string get_role();
         std::vector<Card> get_hand();
