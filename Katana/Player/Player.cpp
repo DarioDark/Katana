@@ -8,6 +8,11 @@ int Player::get_HP()
     return HP;
 }
 
+int Player::get_HonorPoints()
+{
+    return HonorPoints;
+}
+
 std::string Player::get_name()
 {
     return name;
