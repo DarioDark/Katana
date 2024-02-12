@@ -28,7 +28,6 @@ class Game
         void draw_card(Player &player);
         void play_card(Player &player, Card card);
         void attack(Player &attacker, Player &target, Card card);
-        void discard_card(Card card);
         void shuffle_deck(); 
         void print();
 

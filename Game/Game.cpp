@@ -54,8 +54,6 @@ void Game::draw_card(Player &player)
     player.draw(deck);
 }
 
-
-
 void Game::shuffle_deck()
 {
     this->deck.shuffle();
