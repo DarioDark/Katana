@@ -26,6 +26,8 @@ class Game
         void end_game();
         void draw_starting_hand();
         void draw_card(Player &player);
+        void draw_card_discard_pile(Player &player);
+        void discard(Player &player, Card card);
         void play_card(Player &player, Card card);
         void attack(Player &attacker, Player &target, Card card);
         void shuffle_deck(); 

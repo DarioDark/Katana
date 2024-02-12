@@ -90,10 +90,10 @@ void Player::set_character(Character character)
 }
 
 // Methods
-void Player::draw(Deck deck, bool mainDeck = true)
+void Player::draw(Deck deck, int nbr_of_draw = -1)
 {
     std::vector<Card> deckCards = deck.cards;
-    if (mainDeck == true){ // Si aucune valeur n'est spécifiée -> c'est une pioche classique depuis le deck classique
+    if (nbr_of_draw == -1) { // Si aucune valeur n'est spécifiée -> c'est une pioche classique de début de tour
         
         for (int i = 0; i < additional_draw + 1; i++) {
             if (deckCards.size() == 0) {
@@ -104,15 +104,23 @@ void Player::draw(Deck deck, bool mainDeck = true)
                 deckCards.pop_back();
             }
         }
-    } else { // Si une valeur est spécifiée -> c'est une pioche depuis la pile de défausse, on ne pioche qu'une seule carte
-        this->hand.push_back(deckCards.back());
-        deckCards.pop_back();
+    } else { // Si une valeur est spécifiée -> c'est une pioche avec une carte action, donc un montant spécifique
+        for (int i = 0; i < nbr_of_draw; i++) {
+            this->hand.push_back(deckCards.back());
+            deckCards.pop_back();   
+        }
     } 
 }
 
-void Player::play_action_card(ActionCard card)
-{
-    // TODO
+Card Player::discard(Card card) {
+    auto iterator = std::find(this->hand.begin(), this->hand.end(), card);
+
+    if (iterator != this->hand.end()) {
+        int index = std::distance(this->hand.begin(), iterator);
+        Card discarded_card = *iterator;
+        this->hand.erase(iterator);
+        return discarded_card;
+    }
 }
 
 void Player::play_permanent_card(PermanentCard card)

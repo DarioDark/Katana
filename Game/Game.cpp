@@ -44,17 +44,30 @@ void Game::draw_starting_hand()
     }
 }
 
-void Game::end_game()
-{
-    // TODO
-}
+
 
 void Game::draw_card(Player &player)
 {
     player.draw(deck);
 }
 
+void Game::draw_card_discard_pile(Player &player)
+{
+    player.draw(discard_pile);
+}
+
+void Game::discard(Player &player, Card card)
+{
+    Card discarded_card = player.discard(card);
+    this->discard_pile.cards.push_back(discarded_card);
+}
+
 void Game::shuffle_deck()
 {
     this->deck.shuffle();
+}
+
+void Game::end_game()
+{
+    // TODO
 }

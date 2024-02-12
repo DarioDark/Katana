@@ -47,8 +47,8 @@ class Player
         Player(std::string name);
 
         // Methods
-        void draw(Deck deck, bool mainDeck = true);
-        void discard(Card card);
+        void draw(Deck deck, int nbr_of_draw = 1);
+        Card discard(Card card);
         void play_action_card(ActionCard card);
         void play_permanent_card(PermanentCard card);
         void attack(Player &target, Card card);
