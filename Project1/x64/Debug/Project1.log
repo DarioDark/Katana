@@ -1,5 +1,0 @@
-﻿  Game.cpp
-C:\Users\Dario\source\repos\Test Projet Katana\Project1\Game.cpp(28,9): error C3861: 'clrscr' : identificateur introuvable
-C:\Users\Dario\source\repos\Test Projet Katana\Project1\Game.cpp(61,20): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
-  main.cpp
-  Génération de code en cours...
