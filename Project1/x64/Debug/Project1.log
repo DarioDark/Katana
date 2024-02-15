@@ -1,0 +1,11 @@
+﻿  Game.cpp
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(60,20): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(240,65): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(244,53): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(269,77): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(303,21): warning C4244: 'initialisation' : conversion de '__int64' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(306,19): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(309,19): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(320,21): warning C4244: 'initialisation' : conversion de '__int64' en 'int', perte possible de données
+C:\Users\Dario\source\repos\Katana\Project1\Game.cpp(326,25): warning C4244: 'initialisation' : conversion de '__int64' en 'int', perte possible de données
+  Project1.vcxproj -> C:\Users\Dario\source\repos\Katana\x64\Debug\Project1.exe
